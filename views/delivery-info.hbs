@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pizza Bar | {{title}}</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="brand">
+                <a href="/"><p>Pizza Bar</p></a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="/order">Order Online</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <main>
+            <section class="addr-intro">
+                <h1>
+                    Please Enter Address Information for Delivery
+                </h1>
+            </section>
+
+            <section class="address">
+                <form action="/delivery-info" method="POST">
+                    <fieldset>
+                        <label for="lname">Last Name: </label>
+                        <input type="text" id="lname" name="lname" placeholder="Eg.Jobs" required>
+                        <br>
+                        <label for="fname">First Name: </label>
+                        <input type="text" id="fname" name="fname" placeholder="Eg.Steve" required>
+                        <br>
+                        <label for="phone">Phone Number: </label>
+                        <input type="text" id="phone" name="phone" placeholder="Eg.604XXXXXXX" required>
+                        <br>
+                        <label for="street">Street Name: </label>
+                        <input type="text" id="street" name="street" placeholder="Eg. burke street/st" required>
+                        <br>
+                        <label for="suite">Suite/Apt#: </label>
+                        <input type="text" id="suite" name="suite" placeholder="123/1234" required>
+                        <br>
+                        <label for="city">City: </label>
+                        <input type="text" id="city" name="city" placeholder="vancouver" required>
+                        <br>
+                        <label for="province">Province: </label>
+                        <input type="text" id="province" name="province" placeholder="bc" required>
+                        <br>
+                        <label for="postal">Postal Code: </label>
+                        <input type="text" id="postal" name="postal" placeholder="abc123" required>
+                    </fieldset>
+
+                    <div class="submit-btn">
+                        <button type="submit">Confirm Your Address</button>
+                    </div>
+                </form>
+            </section>
+
+
+        </main>
+
+        <footer>
+            <div class="copyright">
+                <p>
+                    &copy2020 CZ
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

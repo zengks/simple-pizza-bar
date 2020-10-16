@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pizza Bar | {{title}}</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="brand">
+                <a href="/"><p>Pizza Bar</p></a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="/order">Order Online</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <main>
+            <section class="preference">
+                <form action="/order" method="POST">
+                    <section class="size">
+                        <fieldset>
+                            <legend>
+                                CHOOSE YOUR SIZE
+                            </legend>
+                            <input type="radio" id="small" name="size" value="small" required>
+                            <label for="small">Small (10") - $5.99</label>
+                            <br>
+                            <input type="radio" id="medium" name="size" value="medium" required>
+                            <label for="medium">medium (12") - $7.99</label>
+                            <br>
+                            <input type="radio" id="large" name="size" value="large" required>
+                            <label for="large">Large (14") - $9.99</label>
+                            <br>
+                        </fieldset>
+                    </section>
+                    
+                    <section class="crust">
+                        <fieldset>
+                            <legend>
+                                CHOOSE YOUR CRUST
+                            </legend>
+                            
+                            <input type="radio" id="tossed-thin" name="crust" value="hand tossed thin" required>
+                            <label for="tossed-thin">Hand Tossed Thin</label>
+                            <br>
+                            <input type="radio" id="original" name="crust" value="original hand tossed" required>
+                            <label for="original">Original Hand Tossed</label>
+                            <br>
+                            <input type="radio" id="crunchy" name="crust" value="crunchy thin crust" required>
+                            <label for="crunchy">Crunchy Thin Crust</label>
+                            <br>
+                        </fieldset>
+                    </section>
+
+                    <section class="sauce">
+                        <fieldset>
+                            <legend>CHOOSE YOUR SAUCE</legend>
+
+                            <input type="checkbox" id="pizza" name="sauce" value="pizza sauce">
+                            <label for="pizza">Pizza Sauce</label>
+                            <br>
+                            <input type="checkbox" id="bbq" name="sauce" value="bbq sauce">
+                            <label for="bbq">BBQ Sauce</label>
+                            <br>
+                            <input type="checkbox" id="alfredo" name="sauce" value="alfredo sauce">
+                            <label for="alfredo">Alfredo Sauce</label>
+                            <br>
+                            <input type="checkbox" id="marinara" name="sauce" value="hearty marinara sauce">
+                            <label for="marinara">Hearty Marinara Sauce</label>
+                            <br>
+                            <input type="checkbox" id="ranch" name="sauce" value="ranch sauce">
+                            <label for="ranch">Ranch Sauce</label>
+                            <br>
+                        </fieldset>
+                       
+                    </section>
+
+                    <section class="topping">
+                        <fieldset>
+                            <legend>
+                                CHOOSE YOUR TOPPING
+                            </legend>
+                            <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+                            <label for="pepperoni">Pepperoni - $1.29</label>
+                            <br>
+                            <input type="checkbox" id="sausage" name="topping" value="sausage">
+                            <label for="sausage">Sausage - $1.29</label>
+                            <br>
+                            <input type="checkbox" id="beef" name="topping" value="beef">
+                            <label for="beef">Beef - $1.56</label>
+                            <br>
+                            <input type="checkbox" id="chicken" name="topping" value="chicken">
+                            <label for="chicken">Chicken - $1.2</label>
+                            <br>
+                            <input type="checkbox" id="bacon" name="topping" value="bacon">
+                            <label for="bacon">Bacon - $1.29</label>
+                            <br>
+                            <input type="checkbox" id="salami" name="topping" value="salami">
+                            <label for="salami">Salami - $1.35</label>
+                            <br>
+                            <input type="checkbox" id="steak" name="topping" value="steak">
+                            <label for="steak">Steak - $2.12</label>
+                            <br>
+                            <input type="checkbox" id="ham" name="topping" value="ham">
+                            <label for="ham">Ham - $1.37</label>
+                            <br>
+                        </fieldset>
+                    </section>
+        
+                    <section class="quantity">
+                        <label for="quantity">Enter Pizza Quantity: </label>
+                        <input type="number" id="quantity" name="quantity" required>
+                        <br>
+                    </section>
+                    
+
+                    <section class="submit-btn">
+                        <button type="submit">Confirm Your Choices</button>
+                    </section>
+                </form>
+            </section>
+            
+        </main>
+
+        <footer>
+            <div class="copyright">
+                <p>
+                   &copy2020 CZ
+                </p>
+            </div>
+        </footer>
+    
+    </div>
+    
+</body>
+</html>
